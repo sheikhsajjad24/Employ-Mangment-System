@@ -98,8 +98,9 @@ saveBtn.addEventListener("click",(e)=>{
  document.getElementById("emId").value = "";
  document.getElementById("firstName").value = "";
  document.getElementById("lastName").value = "";
+ document.getElementById("emEmail").value = "";
  document.getElementById("phoneNumber").value = "";
-document.getElementById("emEmail").value = "";
+
  document.getElementById("emdate").value = "";
 
 })
