@@ -1,3 +1,5 @@
+
+
 let editingRow = null; 
 const saveBtn = document.getElementById("sbtn");
 
@@ -63,9 +65,13 @@ saveBtn.addEventListener("click",(e)=>{
       
       document.getElementById("firstName").value = tBody2.textContent;
       document.getElementById("lastName").value = tBody3.textContent
+    
       document.getElementById("emEmail").value = tBody4.textContent;
-      document.getElementById("phoneNumber").value = tBody5.textContent;
       document.getElementById("emdate").value = tBody6.textContent;
+    
+      document.getElementById("phoneNumber").value = tBody5.textContent;
+    
+  
 
       editingRow = tableRow;
 
@@ -74,8 +80,9 @@ saveBtn.addEventListener("click",(e)=>{
    tableRow.appendChild(tBody2);
    tableRow.appendChild(tBody3);
    tableRow.appendChild(tBody4);
-   tableRow.appendChild(tBody5);
    tableRow.appendChild(tBody6);
+   tableRow.appendChild(tBody5);
+  
 
    tableRow.appendChild(editButton);
    tableRow.appendChild(deletButton);
@@ -87,8 +94,12 @@ saveBtn.addEventListener("click",(e)=>{
   editingRow.children[1].textContent = fName;
   editingRow.children[2].textContent = lName;
   editingRow.children[3].textContent = email;
-  editingRow.children[4].textContent = phone;
-  editingRow.children[5].textContent = date;
+  editingRow.children[4].textContent = date;
+  editingRow.children[5].textContent = phone;
+
+
+
+ 
 
 
   editingRow = null;
@@ -99,10 +110,11 @@ saveBtn.addEventListener("click",(e)=>{
  document.getElementById("firstName").value = "";
  document.getElementById("lastName").value = "";
  document.getElementById("emEmail").value = "";
+ document.getElementById("emdate").value = "";
  document.getElementById("phoneNumber").value = "";
 
- document.getElementById("emdate").value = "";
 
 })
+
 
 
